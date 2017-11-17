@@ -27,10 +27,7 @@ end
 
 def kesha_maker(arr)
   array = []
-  arr.each do |word|
-    word[2] = "$"
-    array << word
-  end
+  arr.each {|word| array << (word[0] = "$")}
   array
 end
 
