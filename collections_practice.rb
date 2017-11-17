@@ -41,3 +41,7 @@ end
 def sum_array(arr)
   arr.inject(:+)
 end
+
+def add_s(arr)
+  arr.each_with_index.collect{|element, i| element + "s" if i != 1}
+end
